@@ -12,6 +12,10 @@
 		0130A7C11E2D7E970057CC1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0130A7BF1E2D7E970057CC1A /* Main.storyboard */; };
 		0130A7C31E2D7E970057CC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0130A7C21E2D7E970057CC1A /* Assets.xcassets */; };
 		0130A7C61E2D7E970057CC1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0130A7C41E2D7E970057CC1A /* LaunchScreen.storyboard */; };
+		017D05071F26DAF7003934C8 /* MovieRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D05061F26DAF7003934C8 /* MovieRegular.swift */; };
+		017D05091F26DB55003934C8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D05081F26DB55003934C8 /* Movie.swift */; };
+		017D050B1F26DF05003934C8 /* MovieNonLinear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D050A1F26DF05003934C8 /* MovieNonLinear.swift */; };
+		017D050D1F26E108003934C8 /* MovieNonLinearProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017D050C1F26E108003934C8 /* MovieNonLinearProblem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		0130A7C21E2D7E970057CC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0130A7C51E2D7E970057CC1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0130A7C71E2D7E970057CC1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017D05061F26DAF7003934C8 /* MovieRegular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieRegular.swift; sourceTree = "<group>"; };
+		017D05081F26DB55003934C8 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		017D050A1F26DF05003934C8 /* MovieNonLinear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieNonLinear.swift; sourceTree = "<group>"; };
+		017D050C1F26E108003934C8 /* MovieNonLinearProblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieNonLinearProblem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		0130A7BA1E2D7E970057CC1A /* SingleThreaded */ = {
 			isa = PBXGroup;
 			children = (
+				0130A7CF1E2D7EAA0057CC1A /* Controller */,
+				0130A7CE1E2D7EA40057CC1A /* View */,
+				0130A7CD1E2D7E9E0057CC1A /* Model */,
 				0130A7BB1E2D7E970057CC1A /* AppDelegate.swift */,
-				0130A7BD1E2D7E970057CC1A /* ViewController.swift */,
-				0130A7BF1E2D7E970057CC1A /* Main.storyboard */,
 				0130A7C21E2D7E970057CC1A /* Assets.xcassets */,
 				0130A7C41E2D7E970057CC1A /* LaunchScreen.storyboard */,
 				0130A7C71E2D7E970057CC1A /* Info.plist */,
 			);
 			path = SingleThreaded;
+			sourceTree = "<group>";
+		};
+		0130A7CD1E2D7E9E0057CC1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				017D05061F26DAF7003934C8 /* MovieRegular.swift */,
+				017D05081F26DB55003934C8 /* Movie.swift */,
+				017D050A1F26DF05003934C8 /* MovieNonLinear.swift */,
+				017D050C1F26E108003934C8 /* MovieNonLinearProblem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0130A7CE1E2D7EA40057CC1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0130A7BF1E2D7E970057CC1A /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0130A7CF1E2D7EAA0057CC1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0130A7BD1E2D7E970057CC1A /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,18 +127,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = RMIT;
 				TargetAttributes = {
 					0130A7B71E2D7E970057CC1A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5D5UTE2BUT;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 0130A7B31E2D7E970057CC1A /* Build configuration list for PBXProject "SingleThreaded" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -138,6 +175,10 @@
 			files = (
 				0130A7BE1E2D7E970057CC1A /* ViewController.swift in Sources */,
 				0130A7BC1E2D7E970057CC1A /* AppDelegate.swift in Sources */,
+				017D050B1F26DF05003934C8 /* MovieNonLinear.swift in Sources */,
+				017D05091F26DB55003934C8 /* Movie.swift in Sources */,
+				017D05071F26DAF7003934C8 /* MovieRegular.swift in Sources */,
+				017D050D1F26E108003934C8 /* MovieNonLinearProblem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,15 +213,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -222,15 +271,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -260,11 +317,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5D5UTE2BUT;
 				INFOPLIST_FILE = SingleThreaded/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.e07582.SingleThreaded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -272,11 +330,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5D5UTE2BUT;
 				INFOPLIST_FILE = SingleThreaded/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.e07582.SingleThreaded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -299,6 +358,7 @@
 				0130A7CC1E2D7E970057CC1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

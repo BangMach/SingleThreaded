@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  SingleThreaded
 //
-//  Created by Rodney Cocker on 17/1/17.
-//  Copyright © 2017 RMIT. All rights reserved.
+//  Created by Rodney Cocker on 07/09/19.
+//  Copyright © 2019 RMIT. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
